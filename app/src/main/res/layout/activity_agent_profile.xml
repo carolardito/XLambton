@@ -1,0 +1,159 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/profileLinearContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="225dp">
+
+                            <ImageView
+                                android:id="@+id/profilePhoto"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:src="@drawable/person"
+                                android:background="#00ABEC"/>
+
+                            <Button
+                                android:id="@+id/button_form_photo"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:background="@drawable/backbuttoncamera"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="16dp"/>
+                        </RelativeLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name"
+                            android:id="@+id/profileName"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Level"
+                            android:id="@+id/profileLevel"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Agency"
+                            android:id="@+id/profileAgency"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="WebSite"
+                            android:id="@+id/profileSite"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Country"
+                            android:id="@+id/profileCountry"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone Number"
+                            android:id="@+id/profilePhone"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address"
+                            android:id="@+id/profileAddress"/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profileLinearButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/profileBtnSite"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/website"/>
+
+                    <Button
+                        android:id="@+id/profileBtnPhone"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/phone"/>
+
+                    <Button
+                        android:id="@+id/profileBtnMaps"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/maps_pin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/profileBtnInfo"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/info"/>
+
+                    <Button
+                        android:id="@+id/profileBtnSMS"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/sms"/>
+
+                    <Button
+                        android:id="@+id/profileBtnCamera"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/camera" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
